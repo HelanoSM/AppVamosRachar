@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lets Split</string>
+    <string name="mensagemini">Lets split this bill without destroy friendships</string>
+    <string name="mensagemconta">Write here the value of the bill</string>
+    <string name="mensagempessoas">Put here the number of persons</string>
+    <string name="mensagemfalar">Speak</string>
+    <string name="mensagempagar">Calculate</string>
+</resources>

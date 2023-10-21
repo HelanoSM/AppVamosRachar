@@ -4,39 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/balcaodebar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintDimensionRatio="1:1"
+        android:layout_width="305dp"
+        android:layout_height="66dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/balcaodebar"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:text="@string/mensagemini"
-        android:textSize="18sp"
+        android:layout_width="623dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="52dp"
+        android:text="Vamos Dividir Essa Conta Sem Destruir Amizades"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/edtConta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/edtConta"
-        android:layout_width="308dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="@string/mensagemconta"
+        android:layout_width="580dp"
+        android:layout_height="128dp"
+        android:ems="20"
+        android:hint="O Valor da Conta vem Aqui"
+        android:textSize="24sp"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,42 +47,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309" />
 
+
     <EditText
         android:id="@+id/edtNumPessoas"
-        android:layout_width="316dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:hint="@string/mensagempessoas"
+        android:layout_width="606dp"
+        android:layout_height="125dp"
+        android:ems="20"
+        android:hint="Número de pagantes"
+        android:textSize="24sp"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtConta"
-        app:layout_constraintVertical_bias="0.242" />
-
+        app:layout_constraintVertical_bias="0.069" />
 
     <Button
         android:id="@+id/btFalar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
+        android:layout_width="174dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:onClick="clickFalar"
-        android:text="@string/mensagemfalar"
+        android:text="Falar"
         app:layout_constraintEnd_toStartOf="@+id/btCalcular"
-        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btCalcular" />
 
     <Button
         android:id="@+id/btCalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="155dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="36dp"
         android:onClick="clickCalcular"
-        android:text="@string/mensagempagar"
+        android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtNumPessoas" />
 
@@ -100,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="176dp"
+        android:layout_marginEnd="624dp"
         android:layout_marginBottom="83dp"
         android:clickable="true"
         android:importantForAccessibility="no"
@@ -108,7 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btCalcular"
-        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="?attr/actionModeShareDrawable" />
 
 

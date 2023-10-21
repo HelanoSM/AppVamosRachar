@@ -22,65 +22,68 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="573dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="68dp"
-        android:text="@string/mensagemini"
-        android:textSize="18sp"
+        android:text="Vamos Dividir Essa Conta Sem Destruir Amizades"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/edtConta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <EditText
         android:id="@+id/edtConta"
-        android:layout_width="308dp"
-        android:layout_height="38dp"
+        android:layout_width="675dp"
+        android:layout_height="109dp"
         android:ems="10"
-        android:hint="@string/mensagemconta"
+        android:hint="O Valor da Conta vem Aqui"
+        android:textSize="36sp"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.372" />
 
     <EditText
         android:id="@+id/edtNumPessoas"
-        android:layout_width="316dp"
-        android:layout_height="41dp"
+        android:layout_width="695dp"
+        android:layout_height="97dp"
         android:ems="10"
-        android:hint="@string/mensagempessoas"
+        android:hint="Número de pagantes"
+        android:textSize="36sp"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtConta"
-        app:layout_constraintVertical_bias="0.242" />
-
+        app:layout_constraintVertical_bias="0.151" />
 
     <Button
         android:id="@+id/btFalar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="147dp"
+        android:layout_height="85dp"
         android:layout_marginEnd="50dp"
         android:onClick="clickFalar"
-        android:text="@string/mensagemfalar"
+        android:text="Falar"
+        android:textSize="28sp"
         app:layout_constraintEnd_toStartOf="@+id/btCalcular"
-        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btCalcular" />
 
     <Button
         android:id="@+id/btCalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="217dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="36dp"
         android:onClick="clickCalcular"
-        android:text="@string/mensagempagar"
+        android:text="Calcular"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtNumPessoas" />
 
@@ -100,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="176dp"
+        android:layout_marginEnd="612dp"
         android:layout_marginBottom="83dp"
         android:clickable="true"
         android:importantForAccessibility="no"
@@ -108,7 +111,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btCalcular"
-        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="?attr/actionModeShareDrawable" />
 
 
